@@ -3,10 +3,14 @@ import Homepage2 from './components/Homepage2';
 import Login from './components/Login';
 import Register from './components/Register';
 import {
-  Routes,Route
+  BrowserRouter as Router,
+  Routes,
+  Route
 } from "react-router-dom";
+
 function App() {
   return (
+    <Router>
     <div className="App">
       <Routes>
         <Route path="/" element={<Homepage2 />} />
@@ -14,6 +18,7 @@ function App() {
         <Route path="/register" element={<Register />} />
       </Routes>
     </div>
+    </Router>
   );
 }
 
