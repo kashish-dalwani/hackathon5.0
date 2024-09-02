@@ -1,0 +1,59 @@
+.reghead{
+    height: 80px;
+    width: 100%;
+    align-items: start;
+    position: absolute;
+    z-index: 1;
+    top: 6%;
+    left: 3%;
+}
+.logoimg{
+    margin-right: 90%;
+    height: 70%;
+}
+.regbody{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 600px;
+    width: 520px;
+    border: 2px solid white;
+    margin-left: 30%;
+    top: 4%;
+    position: absolute;
+    z-index: 1;
+    border-radius: 60px;
+}
+.regbody h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+.regbody p{
+    margin-left: 30%;
+}
+.emailreg , .passreg , .namereg , .confreg , .dobreg{
+    font-size: 23px;
+    margin-left: 14%;
+    font-weight: bold;
+    color: rgb(45, 132, 132);
+}
+.passlog{
+    text-shadow: 0 2px 3px rgba(0, 0, 0, .5);
+}
+.emailbox , .passbox , .namebox , .confbox , .dobbox{
+    height: 20px;
+    margin-left: 14%;
+    width: 70%;
+    margin-top: 13px;
+    margin-bottom: 17px;
+    opacity: 70%;
+}
+.regbody button{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin-left: 40%;
+}

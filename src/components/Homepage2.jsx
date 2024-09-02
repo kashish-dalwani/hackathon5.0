@@ -9,6 +9,9 @@ function Homepage2() {
   function gotoLogin(){
     Navigate("/login")
   }
+  function gotoRegister(){
+    Navigate("/register")
+  }
   return (
     <div>
       <div className="headdivhp">
@@ -27,7 +30,7 @@ function Homepage2() {
         <label className="haveacc">Already have an account?</label>
         <button className="login" onClick={gotoLogin}>LogIn</button>
         <label className="orelse">Or else...</label>
-        <button className="reg">Register</button>
+        <button className="reg" onClick={gotoRegister}>Register</button>
       </div>
       </div>
       <div className="footdivhp">

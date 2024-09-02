@@ -4,7 +4,9 @@ import { useState } from 'react';
 import bgimg from '../assests/logbg.png';
 import {Icon} from 'react-icons-kit';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff';
-import {eye} from 'react-icons-kit/feather/eye'
+import {eye} from 'react-icons-kit/feather/eye';
+import { useNavigate } from "react-router-dom";
+
 
 function Login() {
     const [password, setPassword] = useState("");
@@ -19,7 +21,6 @@ function Login() {
        setType('password')
     }
  }
-
     const bgStyle = {
         position: 'relative',
         backgroundImage: `url(${bgimg})`,
@@ -28,6 +29,10 @@ function Login() {
         height: '100vh',
         width: '100%',
     }
+    const Navigate = useNavigate();
+    function gotoRegister(){
+        Navigate("/register")
+      }
 
   return (
     <div>
@@ -51,7 +56,7 @@ function Login() {
             <a href='/'>Forgot Password?</a>
             </div>
             <div className='reglog'>
-                <p>Not a Member? <button style={{marginLeft: "40px"}}>Register</button></p>
+                <p>Not a Member? <button style={{marginLeft: "40px"}} onClick={gotoRegister}>Register</button></p>
             </div>
         </div>
 

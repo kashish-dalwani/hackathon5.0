@@ -12,6 +12,7 @@
     height: 70%;
 }
 .det{
+    background-color: rgba(0, 0, 0, 0.3);
     height: 520px;
     width: 520px;
     border: 2px solid white;
