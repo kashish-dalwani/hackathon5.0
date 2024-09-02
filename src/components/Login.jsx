@@ -53,7 +53,7 @@ function Login() {
               </span>
             <button className='Logbtn'>LogIn</button><br></br><br></br><br></br>
             <div className='forgotlink'>
-            <a href='/'>Forgot Password?</a>
+            <a href='/forgetpassword'>Forgot Password?</a>
             </div>
             <div className='reglog'>
                 <p>Not a Member? <button style={{marginLeft: "40px"}} onClick={gotoRegister}>Register</button></p>
